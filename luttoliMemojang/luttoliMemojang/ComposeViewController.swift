@@ -8,7 +8,13 @@
 import UIKit
 
 class ComposeViewController: UIViewController {
-
+    
+    
+    @IBAction func close(_ sender: Any) {
+        // 새 메모 화면은 모달 = 이런 화면을 닫을때 싸용
+        dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
