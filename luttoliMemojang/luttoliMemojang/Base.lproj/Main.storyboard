@@ -3,6 +3,7 @@
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -47,12 +48,51 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="루똘 메모" id="zmP-xM-WfU">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="xjz-61-LW1"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="xjz-61-LW1">
+                            <connections>
+                                <segue destination="b7r-3d-L57" kind="presentation" id="kue-hu-PhY"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qNu-do-cxl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1517" y="109"/>
+        </scene>
+        <!--새 메모-->
+        <scene sceneID="pzO-X9-PQx">
+            <objects>
+                <viewController id="0dx-M9-aEc" customClass="ComposeViewController" customModule="luttoliMemojang" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q0d-5E-AXr">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BgU-yB-3SF">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yGI-6I-Zfg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BgU-yB-3SF" firstAttribute="leading" secondItem="yGI-6I-Zfg" secondAttribute="leading" id="ckR-bR-bUz"/>
+                            <constraint firstItem="BgU-yB-3SF" firstAttribute="top" secondItem="Q0d-5E-AXr" secondAttribute="top" id="nT9-1o-S3x"/>
+                            <constraint firstItem="BgU-yB-3SF" firstAttribute="bottom" secondItem="yGI-6I-Zfg" secondAttribute="bottom" id="snv-Mo-Rve"/>
+                            <constraint firstItem="BgU-yB-3SF" firstAttribute="trailing" secondItem="yGI-6I-Zfg" secondAttribute="trailing" id="v5R-bJ-tNT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="새 메모" id="3kL-cD-zmi">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="o9y-Rz-wUp"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Mwm-Mq-nO9"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0th-DV-7CQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3095.3271028037379" y="-532.61339092872572"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="icK-Q5-6CW">
@@ -70,8 +110,29 @@
             </objects>
             <point key="canvasLocation" x="884" y="109"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DwD-X7-He3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b7r-3d-L57" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MLU-cl-4EO">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0dx-M9-aEc" kind="relationship" relationship="rootViewController" id="PQi-T5-Z7p"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z1J-eq-SBz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2196.7289719626165" y="-533.26133909287262"/>
+        </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
