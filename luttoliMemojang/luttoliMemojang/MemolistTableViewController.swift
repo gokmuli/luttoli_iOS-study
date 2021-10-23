@@ -1,5 +1,5 @@
 //
-//  MemolistTableViewController.swift
+//  MemoListTableViewController.swift
 //  luttoliMemojang
 //
 //  Created by 김지훈 on 2021/10/23.
@@ -7,9 +7,7 @@
 
 import UIKit
 
-class MemolistTableViewController: UITableViewController {
-    
-    var memo: [String] = []
+class MemoListTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,25 +18,22 @@ class MemolistTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-    }
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return self.memo.count
+        return Memo.dummyMemoList.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MemoCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+
+        // Configure the cell...
+        let target = Memo.dummyMemoList[indexPath.row]
+        cell.textLabel?.text = target.content
+        cell.detailTextLabel?.text = target.insertDate.description
+
         return cell
     }
 

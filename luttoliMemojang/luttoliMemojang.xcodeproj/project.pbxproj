@@ -13,6 +13,7 @@
 		CFD668FA2723EC2C0048C0E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFD668F92723EC2C0048C0E3 /* Assets.xcassets */; };
 		CFD668FD2723EC2C0048C0E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD668FB2723EC2C0048C0E3 /* LaunchScreen.storyboard */; };
 		CFD66908272445EC0048C0E3 /* Moder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD66907272445EC0048C0E3 /* Moder.swift */; };
+		CFD6690A27244B440048C0E3 /* MemoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD6690927244B440048C0E3 /* MemoListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CFD668FC2723EC2C0048C0E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFD668FE2723EC2C0048C0E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFD66907272445EC0048C0E3 /* Moder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moder.swift; sourceTree = "<group>"; };
+		CFD6690927244B440048C0E3 /* MemoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				CFD668F92723EC2C0048C0E3 /* Assets.xcassets */,
 				CFD668FB2723EC2C0048C0E3 /* LaunchScreen.storyboard */,
 				CFD668FE2723EC2C0048C0E3 /* Info.plist */,
+				CFD6690927244B440048C0E3 /* MemoListTableViewController.swift */,
 			);
 			path = luttoliMemojang;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				CFD66908272445EC0048C0E3 /* Moder.swift in Sources */,
 				CFD668F12723EC2A0048C0E3 /* AppDelegate.swift in Sources */,
 				CFD668F32723EC2A0048C0E3 /* SceneDelegate.swift in Sources */,
+				CFD6690A27244B440048C0E3 /* MemoListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
