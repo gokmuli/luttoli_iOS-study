@@ -18,6 +18,7 @@ class Memo {
         insertDate = Date()
     }
     
+    //더미데이터
     static var dummyMemoList = [
         Memo(content: "Lorem Ipsum"),
         Memo(content: "Subscribe + 👍 = ❤️")

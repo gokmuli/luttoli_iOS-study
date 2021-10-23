@@ -8,6 +8,15 @@
 import UIKit
 
 class MemoListTableViewController: UITableViewController {
+    
+    // 새로운 속성 = 날짜를 원하는 포멧으로 설정할때는 DateFormatter 사용
+    let formatter: DateFormatter = { //클로저를 활용하여 초기화
+        let f = DateFormatter()
+        f.dateStyle = .long
+        f.timeStyle = .short
+        f.locale = Locale(identifier: "Ko_kr") //지역도 설정할 수 있음
+        return f
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +41,7 @@ class MemoListTableViewController: UITableViewController {
         // Configure the cell...
         let target = Memo.dummyMemoList[indexPath.row]
         cell.textLabel?.text = target.content
-        cell.detailTextLabel?.text = target.insertDate.description
+        cell.detailTextLabel?.text = formatter.string(from: target.insertDate) //포메터에서 스트링 프럼 메소드로 날짜를 전달하면 지정한 스타일로 변환해서 문자열로 리턴해줌
 
         return cell
     }
