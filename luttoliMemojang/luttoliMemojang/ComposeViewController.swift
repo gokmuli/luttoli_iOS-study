@@ -32,7 +32,7 @@ class ComposeViewController: UIViewController {
         Memo.dummyMemoList.append(newMemo)
         
         //화면을 닫기전에 노티피케이션 전달, 라디오방송국에서 라디오방송을 브로드케스팅하는것과 같음, 노티피케이션은 특정 계체에게 바로 전달되지 않음, 이건 유닛케스트, 노티피케이션은 브로드케스트와 같다
-        NotificationCenter.default.post(name: ComposeViewController.newMemoDidInsert, object: nil)
+        NotificationCenter.default.post(name: ComposeController.newMemoDidInsert, object: nil)
         
         
         //새 메모 화면 닫기
