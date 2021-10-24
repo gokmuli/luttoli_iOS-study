@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CF6C6D4D272452AF0022D2B7 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6C6D4C272452AF0022D2B7 /* ComposeViewController.swift */; };
+		CFD5ECC127255B8B00BD77E9 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD5ECC027255B8B00BD77E9 /* UIViewController+Alert.swift */; };
 		CFD668F12723EC2A0048C0E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD668F02723EC2A0048C0E3 /* AppDelegate.swift */; };
 		CFD668F32723EC2A0048C0E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD668F22723EC2A0048C0E3 /* SceneDelegate.swift */; };
 		CFD668F82723EC2A0048C0E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD668F62723EC2A0048C0E3 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		CF6C6D4C272452AF0022D2B7 /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		CFD5ECC027255B8B00BD77E9 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		CFD668ED2723EC2A0048C0E3 /* luttoliMemojang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = luttoliMemojang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFD668F02723EC2A0048C0E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFD668F22723EC2A0048C0E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				CFD668FE2723EC2C0048C0E3 /* Info.plist */,
 				CFD6690927244B440048C0E3 /* MemoListTableViewController.swift */,
 				CF6C6D4C272452AF0022D2B7 /* ComposeViewController.swift */,
+				CFD5ECC027255B8B00BD77E9 /* UIViewController+Alert.swift */,
 			);
 			path = luttoliMemojang;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 				CF6C6D4D272452AF0022D2B7 /* ComposeViewController.swift in Sources */,
 				CFD66908272445EC0048C0E3 /* Moder.swift in Sources */,
 				CFD668F12723EC2A0048C0E3 /* AppDelegate.swift in Sources */,
+				CFD5ECC127255B8B00BD77E9 /* UIViewController+Alert.swift in Sources */,
 				CFD668F32723EC2A0048C0E3 /* SceneDelegate.swift in Sources */,
 				CFD6690A27244B440048C0E3 /* MemoListTableViewController.swift in Sources */,
 			);
